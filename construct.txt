@@ -1,0 +1,1 @@
+using Adaptive Web Design(AWD) instead of Responsive Web Design(RWD) in SQL system
