@@ -30,14 +30,29 @@
             </header>
 
             <div style="flex: 1; padding-top: 70px;">
-                <table style="height: 100%;; border-collapse: collapse">
+                <table style="height: 100%; width: 100%; border-collapse: collapse">
                     <tr>
                         <td style="width: 89px; border-right: 1px solid black; background-color: lightblue; padding: 0px 5px;">
                             <div id="left">
+                                <div id="left-item" onclick="update()">update</div>
                                 <div id="left-item" onclick="showall()">show all</div>
                             </div>
                         </td>
-                        <td id="test">right</td>
+                        <td>
+                            <table id="data-frame">
+                                <tbody id="data">
+                                    <tr>
+                                        <td style="width: 45px; border-right: 1px solid black;text-align: center;">年</td>
+                                        <td style="width: 25px; border-right: 1px solid black;text-align: center;">月</td>
+                                        <td style="width: 25px; border-right: 1px solid black;text-align: center;">日</td>
+                                        <td style="width: 110px; border-right: 1px solid black;text-align: center;">貨號</td>
+                                        <td style="border-right: 1px solid black;text-align: center;">名稱</td>
+                                        <td style="width: 125px; border-right: 1px solid black;text-align: center;">價格</td>
+                                        <td style="width: 55px; border-right: 1px solid black;text-align: center;">數量</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
                     </tr>
                 </table>
             </div>

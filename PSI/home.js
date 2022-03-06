@@ -14,11 +14,23 @@ let showall = () => {
     })
     .then(restext => {
         console.log(restext);
-        let testing = document.querySelector("#test");
-        testing.innerHTML = restext[0].year+" "+restext[0].month+" "+restext[0].day+" "+restext[0].sn+" "+restext[0].goods+" "+restext[0].price+" "+restext[0].quantity;
-        // testing.innerHTML = restext;
+        let tbody = document.querySelector('#data');
+        for (let i=0; i<restext.length; i++){
+            let tr = document.createElement('tr');
+            tbody.appendChild(tr);
+            for (let item in restext[i]){
+                let td = document.createElement('td');
+                td.innerHTML = restext[i][item];
+                td.style.cssText = " border-right: 1px solid black;";
+                tr.appendChild(td);
+            }
+        }
     })
     .catch(error => {
         console.log("Error:" + error);
     })
+}
+
+let update = () => {
+    console.log("還沒做");
 }

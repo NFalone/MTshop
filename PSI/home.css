@@ -9,3 +9,6 @@ footer{height: 50px; background-color: lightgray;}
 #left-item{cursor: pointer; padding-top: 5px; color: rgba(0, 0, 0, 0.644);}
 #left-item:hover{display:inline-block;transform:scale(1.1);}
 #left-item:active{display:inline-block;transform:scale(1);}
+
+#data-frame{width: 100%;}
+.data-style{border-right: 1px solid black;}
