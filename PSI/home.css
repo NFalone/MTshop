@@ -11,4 +11,3 @@ footer{height: 50px; background-color: lightgray;}
 #left-item:active{display:inline-block;transform:scale(1);}
 
 #data-frame{width: 100%;}
-.data-style{border-right: 1px solid black;}
