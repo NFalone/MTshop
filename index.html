@@ -24,6 +24,16 @@
             <div style="padding-top: 70px;">
                 Content
                 <a href="./resource/search.html">search.html</a>
+                
+                <script>
+                    let sleep = new Worker("./sleep.js");
+                    sleep.postMessage(10);
+                    sleep.postMessage(10);
+                    sleep.addEventListener("message", e => {
+                        console.log(e.data);
+                    }, false)
+                </script>
+
             </div>
         </div>
     </div>
